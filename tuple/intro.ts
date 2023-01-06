@@ -1,18 +1,17 @@
 
- // const user: (string | number)[] = [1, "hc"]
-let tUser: [string, number, boolean]
+// const user:(string | number)[] = ['cj',20]
 
-tUser = ["hc", 131, true]
+// alternative way of adding many types to your array is to use tuples
+// but like this we cant reverse the order of the array 
+let tUser:[string,number,boolean]
 
-let rgb: [number, number, number] = [255, 123, 112]
+tUser = ['cj',20,true]
 
-type User = [number, string]
+let rgb: [number,number,number] = [255,123,45]
+let rgba: [number,number,number,number] = [255,123,45,0.5]
 
-const newUser: User = [112, "example@google.com"]
-
-newUser[1] = "hc.com"
-// newUser.push(true)
-
-
+type User = [number,string] 
+const newUser: User = [2022,'me@cameroon.cm']
+newUser.push(true)
 
 export {}
