@@ -8,10 +8,10 @@ export class User {
   }
 
   constructor() {
-    this.name = faker.name.firstName();
+    this.name = faker.person.firstName();
     this.location = {
-      lat : faker.address.latitude(),
-      lng : faker.address.longitude()
+      lat : faker.location.latitude(),
+      lng : faker.location.longitude()
     }
   }
 }
